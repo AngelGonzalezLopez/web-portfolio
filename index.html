@@ -1,30 +1,288 @@
-HTML
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Angel Gonzalez Lopez / Portafolio</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; text-align: center; padding: 50px; }
-        .tarjeta { background: white; width: 60%; margin: auto; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; }
-        p { color: #555; font-size: 1.2rem; }
-        .boton { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;}
-        .boton:hover { background: #0056b3; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel Gonzalez Lopez | Web Developer</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+.botones {
+    margin-top: 25px;
+}
+
+.botones a {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.botones a:hover {
+    background: #1d4ed8;
+}
+
+/* MAIN LAYOUT */
+.contenedor {
+    display: flex;
+    gap: 30px;
+    padding: 60px 8%;
+}
+
+/* MAIN PROFESSIONAL */
+.principal {
+    flex: 3;
+}
+
+section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.skill {
+    background: #e2e8f0;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    background: #f8fafc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card .content {
+    padding: 20px;
+}
+
+/* CERTIFICATIONS */
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.certifications img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.certifications img:hover {
+    transform: scale(1.05);
+}
+
+/* SIDEBAR ACADEMIC */
+.sidebar {
+    flex: 1;
+}
+
+.sidebar .card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #9ca3af;
+    padding-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0f172a;
+    color: #94a3b8;
+}
+
+</style>
 </head>
+
 <body>
-    <div class="tarjeta">
-        <h1>C. Angel Gonzalez Lopez - Alumno Universidad politecnica de baja california</h1>
-        <p>Estudiante de Ingeniería en Tecnologías de la Información</p>
-        <hr>
-        <p>Bienvenido a mi repositorio de prácticas.</p>
-        <p>Aquí documentaré mi avance en la materia de <strong>Tecnologías y Aplicaciones en Internet</strong>.</p>
 
-        <a href="practica4/index.html"> Evidencia de la Practica 4 </a>
-        
-      
+<header>
+    <h1>Angel Gonzalez Lopez</h1>
+    <p>Web Systems Developer | IT Engineering Student</p>
+    <div class="botones">
+        <a href="Angel_Gonzalez_Lopez_CV.pdf" target="_blank">Download Resume</a>
+        <a href="https://www.linkedin.com/in/angel-gonzalez-lopez-u1118/" target="_blank">LinkedIn</a>
     </div>
-</body>
+</header>
 
+<div class="contenedor">
+
+    <main class="principal">
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+            Information Technology Engineering student with hands-on experience in real-world web development projects. Web Systems Developer with practical knowledge of HTML5, CSS3, JavaScript, PHP, and Java, involved in system analysis, technical documentation, and continuous improvement of web platforms within a microbusiness environment. <br>
+
+            Strong problem-solving skills, a self-learning mindset, adaptability to new environments, and a responsible team-oriented approach. I bring commitment, collaboration, and a focus on delivering reliable, high-quality solutions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">PHP</div>
+                <div class="skill">Java</div>
+                
+            </div>
+        </section>
+
+        <section>
+            <h2>Current Projects</h2>
+            <div class="projects">
+
+                <div class="project-card">
+                     <a href="https://www.isma-c.com/" target="_blank"><img src="elements/ismac.png" alt="ISMAC">
+                    <div class="content">
+                        <h3>ISMAC System</h3>
+                        <p>Development and maintenance of web systems used in ISMAC, focused on improving processes and implementing new features.</p>
+                    </div> </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://www.isma-c.com/CapacitateConISMAC/loginCapacitate.php" target="_blank"><img src="elements/ismac-capacitaciones.png" alt="ISMAC Capacitaciones">
+                    <div class="content">
+                        <h3>ISMAC Capacitaciones</h3>
+                        <p>Web platform for training and courses used in ISMAC, contributing to system development, optimization, and user experience improvements.</p>
+                    </div></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <a href="elements/css.pdf" target="_blank">
+                    <img src="elements/css.png" alt="CSS Certification">
+                </a>
+                <a href="elements/html.pdf" target="_blank">
+                    <img src="elements/html.png" alt="HTML Certification">
+                </a>
+                <a href="elements/python1.pdf" target="_blank">
+                    <img src="elements/python1.png" alt="Python Certification">
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <h3>ISMAC (ingenieria en seguridad medio ambiente y capacitacion)</h3>
+            <p><strong>Web Systems Developer (February 2026 - present.)</strong></p>
+            <p> Definition and creation of official technical documentation. <br>
+                IT equipment inventory management and system organization. <br>
+                Participation in infrastructure oversight, including on-premise server setup</p>
+
+            <p><strong>Web Development Support (Hybrid Role) (August 2024 – January 2026)</strong></p>
+            <p> Support in the development of the first version of the institutional website.<br>
+                Assistance in the creation and early development of the SIGCAPC management system.<br>
+                Technical support tasks combined with analytical and administrative responsibilities.<br>
+                Initial involvement in web development and system analysis within a real work environment.</p>
+
+            <p><strong>Analyst / Data Entry Assistant (February 2023 – July 2024)</strong></p>
+            <p> Completion and processing of client service requests and internal forms.<br>
+                Organization and archiving of physical and digital documentation.<br>
+                Assistance in preparing contingency plans and internal civil protection programs for our clients.<br>
+                Support in administrative and operational tasks for client projects.</p>
+        </section>
+
+    </main>
+
+    <aside class="sidebar">
+        <div class="card">
+            <h3>Academic Work</h3>
+            <p><strong>Tecnologías y Aplicaciones en Internet</strong></p>
+            <p><a href="practica4/index.html">Evidencia de la Practica 4</a></p>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+© 2026 Angel Gonzalez Lopez | Web Systems Developer
+</footer>
+
+</body>
 </html>
